@@ -9,6 +9,7 @@ const nationalRegex = /^[a-zA-Z0-9]{6,12}$/
 export async function signInAction() {
     await signIn("google",{redirectTo:"/account"});
 }
+
 export async function signOutAction() {
     await signOut({redirectTo:"/ "});
 } 
